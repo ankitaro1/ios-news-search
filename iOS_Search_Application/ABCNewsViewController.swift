@@ -80,4 +80,10 @@ open class ABCNewsViewController: UIViewController, UISearchBarDelegate, UITable
         cell.setData()
         return cell
     }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let targerVC = WebViewController()
+        targerVC.loadUrl = self.dataList[indexPath.row].url
+        self.navigationController?.pushViewController(targerVC, animated: true)
+    }
 }

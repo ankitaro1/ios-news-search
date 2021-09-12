@@ -16,7 +16,7 @@ public class ViewController: UIViewController {
         self.enterNewsButton?.layer.borderWidth = CGFloat(1)
         self.enterNewsButton?.layer.borderColor =  UIColor.white.cgColor
         self.enterNewsButton?.layer.cornerRadius = CGFloat(12)
-        self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.navigationBar.isHidden = false
     }
 
     @IBAction func enterNewsButtonAction(_ sender: Any) {
